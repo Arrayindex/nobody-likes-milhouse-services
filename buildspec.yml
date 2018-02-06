@@ -2,15 +2,16 @@ version: 0.2
 
 phases:
   build:
+      commands:
+        - echo Entering build phase...
+        - echo Build started on `date`
+        - echo "Building project"
+        - gradle jar build
+post_build:
     commands:
-      - echo Entering build phase...
-      - echo Build started on `date`
-      - pip install --upgrade awscli
-      - mvn package shade:shade
-      - mv target/HelloWorld-1.0.jar .
-      - unzip HelloWorld-1.0.jar
-      - rm -rf target src buildspec.yml pom.xml HelloWorld-1.0.jar
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
+      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.json
 artifacts:
+  discard-paths: yes
   files:
-    - template-export.yml
+    - build/reports/*
+    - template-export.json

@@ -49,3 +49,4 @@ docs/.swagger*
 *.iml
 gradle/
 out/
+.idea/
