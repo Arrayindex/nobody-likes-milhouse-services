@@ -8,6 +8,6 @@ import java.util.HashMap;
 public class ProfileHandler implements RequestHandler<ProfileRequest, ProfileResponse> {
     @Override
     public ProfileResponse handleRequest(ProfileRequest input, Context context) {
-        return new ProfileResponse("{ \"Out1put\": \"Hello World!\"}", new HashMap<String, String>(), 200);
+        return new ProfileResponse("Hello World 123");
     }
 }
