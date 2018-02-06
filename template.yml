@@ -22,5 +22,5 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /cards
             Method: get
