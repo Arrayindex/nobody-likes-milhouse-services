@@ -16,6 +16,10 @@ public class ProfileResponse {
         this.firstName = firstName;
     }
 
+    public ProfileResponse(String firstName) {
+        this.firstName = firstName;
+    }
+
     public ProfileResponse() {
     }
 }
