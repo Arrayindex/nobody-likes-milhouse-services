@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-nobody-likes-milhouse-services.iml" filepath="$PROJECT_DIR$/.idea/modules/java-nobody-likes-milhouse-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nobody-likes-milhouse-services.iml" filepath="$PROJECT_DIR$/nobody-likes-milhouse-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nobody-likes-milhouse-services_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nobody-likes-milhouse-services_main.iml" group="nobody-likes-milhouse-services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nobody-likes-milhouse-services_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nobody-likes-milhouse-services_test.iml" group="nobody-likes-milhouse-services" />
+    </modules>
+  </component>
+</project>
