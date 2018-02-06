@@ -7,11 +7,9 @@ phases:
         - echo Build started on `date`
         - echo "Building project"
         - gradle jar build
-post_build:
-    commands:
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.json
+  post_build:
+      commands:
+        - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.json
 artifacts:
-  discard-paths: yes
   files:
-    - build/reports/*
     - template-export.json
