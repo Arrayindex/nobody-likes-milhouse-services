@@ -3,13 +3,13 @@ package com.confusedpenguins.nobodylikesmilhouse.api.web;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LambdaProxyResponse {
+public abstract class LambdaProxyResponse {
 
     // Required by API Gateway
     private boolean isBase64Encoded = false;
     private int statusCode;
     private Map<String, String> headers;
-    private String body;
+    protected String body;
 
     /**
      * @param statusCode
@@ -26,8 +26,8 @@ public class LambdaProxyResponse {
         this.headers = headers == null ? new HashMap<>() : headers;
     }
 
-    public LambdaProxyResponse(HttpStatusAnswer answer) {
-        this(answer.getStatusCode(), null, null);
+    public LambdaProxyResponse(HttpStatus answer) {
+        this(answer.getNumVal(), null, null);
     }
 
     public boolean isBase64Encoded() {
