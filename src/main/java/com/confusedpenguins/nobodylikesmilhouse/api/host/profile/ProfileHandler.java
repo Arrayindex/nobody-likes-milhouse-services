@@ -8,10 +8,10 @@ import com.confusedpenguins.nobodylikesmilhouse.api.web.LambdaProxyResponse;
 
 import java.util.HashMap;
 
-public class ProfileHandler implements RequestHandler<ProfileRequest, ProfileResponse> {
+public class ProfileHandler implements RequestHandler<ProfileRequest, LambdaProxyResponse> {
     @Override
-    public ProfileResponse handleRequest(ProfileRequest input, Context context) {
-        ProfileResponse lambdaProxyResponse = new ProfileResponse(HttpStatus.SUCCESS, "Hello World");
+    public LambdaProxyResponse handleRequest(ProfileRequest input, Context context) {
+        LambdaProxyResponse lambdaProxyResponse = new LambdaProxyResponse(HttpStatus.SUCCESS, new ProfileResponse("Hello World"));
         return lambdaProxyResponse;
     }
 }
