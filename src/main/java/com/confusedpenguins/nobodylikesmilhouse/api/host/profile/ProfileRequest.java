@@ -1,16 +1,9 @@
 package com.confusedpenguins.nobodylikesmilhouse.api.host.profile;
 
-public class ProfileRequest {
-    private String facebookToken;
+import com.confusedpenguins.nobodylikesmilhouse.api.web.LambdaProxyRequest;
 
+public class ProfileRequest extends LambdaProxyRequest {
     public ProfileRequest() {
-    }
 
-    public ProfileRequest(String facebookToken) {
-        this.facebookToken = facebookToken;
-    }
-
-    public String getFacebookToken() {
-        return facebookToken;
     }
 }

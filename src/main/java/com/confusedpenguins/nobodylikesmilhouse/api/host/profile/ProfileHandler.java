@@ -11,7 +11,8 @@ import java.util.HashMap;
 public class ProfileHandler implements RequestHandler<ProfileRequest, LambdaProxyResponse> {
     @Override
     public LambdaProxyResponse handleRequest(ProfileRequest input, Context context) {
-        LambdaProxyResponse lambdaProxyResponse = new LambdaProxyResponse(HttpStatus.SUCCESS, new ProfileResponse("Hello World"));
+        String headerValue = input.getHeaders().get("x-facebook-token");
+        LambdaProxyResponse lambdaProxyResponse = new LambdaProxyResponse(HttpStatus.SUCCESS, new ProfileResponse(headerValue));
         return lambdaProxyResponse;
     }
 }
