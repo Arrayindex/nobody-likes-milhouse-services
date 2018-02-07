@@ -19,8 +19,8 @@ public class LambdaProxyResponse {
      *                   headers to return.
      * @param payload    The body of the response.
      */
-    public LambdaProxyResponse(int statusCode, Map<String, String> headers, Object payload) {
-        this.statusCode = statusCode;
+    public LambdaProxyResponse(HttpStatus statusCode, Map<String, String> headers, Object payload) {
+        this.statusCode = statusCode.getNumVal();
         this.headers = headers == null ? new HashMap<>() : headers;
 
         Gson gson = new Gson();
@@ -29,7 +29,7 @@ public class LambdaProxyResponse {
     }
 
     public LambdaProxyResponse(HttpStatus answer, Object payload) {
-        this(answer.getNumVal(), null, null);
+        this(answer, null, payload);
     }
 
     public boolean isBase64Encoded() {
