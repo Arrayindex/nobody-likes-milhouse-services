@@ -24,3 +24,20 @@ Resources:
           Properties:
             Path: /cards
             Method: get
+  UserProfileTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "UserId"
+            AttributeType: "S"
+          - AttributeName: "ExternalId"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "UserId"
+            KeyType: "HASH"
+          - AttributeName: "ExternalId"
+            KeyType: "RANGE"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: UserProfiles
