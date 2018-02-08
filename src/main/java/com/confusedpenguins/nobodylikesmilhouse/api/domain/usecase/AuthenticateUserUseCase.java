@@ -32,7 +32,7 @@ public class AuthenticateUserUseCase implements UseCase<Identity> {
                 return null;
             }
 
-            Request request = getBaseBuilder().get().url(getAuthenticatedPath("/v2.12/me?", this.facebookToken)).build();
+            Request request = getBaseBuilder().get().url(getAuthenticatedPath("/v2.12/me", this.facebookToken)).build();
             Response response = this.okHttpClient.newCall(request).execute();
             logger.info("Response: " + response.toString());
             if (!response.isSuccessful()) {
