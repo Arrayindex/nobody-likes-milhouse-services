@@ -5,10 +5,13 @@ import com.google.gson.Gson;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
 public class AuthenticateUserUseCase implements UseCase<Identity> {
+    private final Logger logger = LogManager.getLogger(AuthenticateUserUseCase.class);
     private String authEndpoint;
     private String facebookToken;
     private OkHttpClient okHttpClient;
@@ -24,6 +27,7 @@ public class AuthenticateUserUseCase implements UseCase<Identity> {
     @Override
     public Identity execute() {
         try {
+            logger.info("Authenticating User");
             if (this.facebookToken == null) {
                 return null;
             }
@@ -34,9 +38,10 @@ public class AuthenticateUserUseCase implements UseCase<Identity> {
             if (!response.isSuccessful()) {
                 return null;
             }
-
+            logger.info("Got User " + response.toString());
             return gson.fromJson(new String(response.body().bytes()), Identity.class);
         } catch (IOException exception) {
+            logger.error(exception);
             exception.printStackTrace();
         }
         return null;
