@@ -9,22 +9,38 @@ Parameters:
     Description: AWS CodeStar projectID used to associate new resources to team members
 
 Resources:
-  GetHelloWorld:
+  GetProfile:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ./build/libs/milhouse-api.jar
-      Handler: com.confusedpenguins.nobodylikesmilhouse.api.host.profile.ProfileHandler::handleRequest
+      Handler: com.confusedpenguins.nobodylikesmilhouse.api.host.profile.GetProfileHandler::handleRequest
       Runtime: java8
       Timeout: 15
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
       Events:
-        PostEvent:
+        GetProfileEvent:
           Type: Api
           Properties:
-            Path: /cards
+            Path: /profile
             Method: get
+  UpdateProfile:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./build/libs/milhouse-api.jar
+      Handler: com.confusedpenguins.nobodylikesmilhouse.api.host.profile.UpdateProfileHandler::handleRequest
+      Runtime: java8
+      Timeout: 15
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetProfileEvent:
+          Type: Api
+          Properties:
+            Path: /profile
+            Method: post
   UserProfileTable:
       Type: AWS::DynamoDB::Table
       Properties:

@@ -14,6 +14,8 @@ public abstract class LambdaProxyRequest {
         this.headers = headers;
     }
 
+
+
     public String getFacebookToken() {
         if (this.headers == null) {
             return null;

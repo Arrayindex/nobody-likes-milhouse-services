@@ -6,7 +6,8 @@ import com.confusedpenguins.nobodylikesmilhouse.api.web.LambdaProxyResponse;
 import java.util.Map;
 
 public class UnauthorizedAnswer extends LambdaProxyResponse {
+
     public UnauthorizedAnswer() {
-        super(HttpStatus.UNAUTHORIZED, null);
+        super(HttpStatus.UNAUTHORIZED, "There be dragons there");
     }
 }
