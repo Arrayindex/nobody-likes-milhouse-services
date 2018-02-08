@@ -6,6 +6,7 @@ public class ProfileRequest extends LambdaProxyRequest {
     private String firstName;
     private String email;
     private String quote;
+    private String body;
 
     public ProfileRequest() {
 
@@ -29,6 +30,7 @@ public class ProfileRequest extends LambdaProxyRequest {
                 "firstName='" + firstName + '\'' +
                 ", email='" + email + '\'' +
                 ", quote='" + quote + '\'' +
+                ", body='" + body + '\'' +
                 '}';
     }
 }
