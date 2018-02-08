@@ -1,9 +1,11 @@
 package com.confusedpenguins.nobodylikesmilhouse.api.host.profile;
 
-public class ProfileResponse {
-    private String hello;
+import com.confusedpenguins.nobodylikesmilhouse.api.domain.user.Identity;
 
-    public ProfileResponse(String hello) {
-        this.hello = hello;
+public class ProfileResponse {
+    private Identity identity;
+
+    public ProfileResponse(Identity identity) {
+        this.identity = identity;
     }
 }
