@@ -47,6 +47,6 @@ docs/.swagger*
 
 # IntelliJ Things
 *.iml
-gradle/
 out/
 .idea/
+
