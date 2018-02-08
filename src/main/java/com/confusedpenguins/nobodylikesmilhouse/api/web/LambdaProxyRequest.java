@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 
 import java.util.Map;
 
-public abstract class LambdaProxyRequest<E> {
+public class LambdaProxyRequest<E> {
     private final String facebookTokenHeader = "x-facebook-token";
     private Map<String, String> headers;
     private String body;

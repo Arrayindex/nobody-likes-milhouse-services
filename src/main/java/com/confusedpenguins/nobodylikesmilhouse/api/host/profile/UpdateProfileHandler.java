@@ -33,6 +33,6 @@ public class UpdateProfileHandler implements RequestHandler<LambdaProxyRequest<P
         ProfileRequest request = input.getSerializedBody(ProfileRequest.class);
         logger.info("Got Request for " + request.getFirstName());
 
-        return new LambdaProxyResponse(HttpStatus.SUCCESS, input);
+        return new LambdaProxyResponse(HttpStatus.SUCCESS, input.getSerializedBody(ProfileRequest.class));
     }
 }

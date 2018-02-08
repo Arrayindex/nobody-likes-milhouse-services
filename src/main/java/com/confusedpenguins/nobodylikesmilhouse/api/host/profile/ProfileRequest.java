@@ -1,8 +1,8 @@
 package com.confusedpenguins.nobodylikesmilhouse.api.host.profile;
 
-import com.confusedpenguins.nobodylikesmilhouse.api.web.LambdaProxyRequest;
+import java.io.Serializable;
 
-public class ProfileRequest extends LambdaProxyRequest {
+public class ProfileRequest implements Serializable {
     private String firstName;
     private String email;
     private String quote;
