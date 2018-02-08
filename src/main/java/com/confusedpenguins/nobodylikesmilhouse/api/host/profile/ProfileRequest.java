@@ -7,6 +7,10 @@ public class ProfileRequest extends LambdaProxyRequest {
     private String email;
     private String quote;
 
+    public ProfileRequest() {
+
+    }
+
     public ProfileRequest(String firstName, String email, String quote) {
         this.firstName = firstName;
         this.email = email;
