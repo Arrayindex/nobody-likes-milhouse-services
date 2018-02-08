@@ -5,6 +5,7 @@ import java.util.Map;
 public abstract class LambdaProxyRequest {
     private final String facebookTokenHeader = "x-facebook-token";
     private Map<String, String> headers;
+    private String body;
 
     public Map<String, String> getHeaders() {
         return headers;
@@ -14,7 +15,13 @@ public abstract class LambdaProxyRequest {
         this.headers = headers;
     }
 
+    public String getBody() {
+        return body;
+    }
 
+    public void setBody(String body) {
+        this.body = body;
+    }
 
     public String getFacebookToken() {
         if (this.headers == null) {
