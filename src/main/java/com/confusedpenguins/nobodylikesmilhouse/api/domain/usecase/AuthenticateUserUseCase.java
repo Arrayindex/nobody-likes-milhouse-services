@@ -33,17 +33,22 @@ public class AuthenticateUserUseCase implements UseCase<Identity> {
             }
 
             Request request = getBaseBuilder().get().url(getAuthenticatedPath("/v2.12/me", this.facebookToken)).build();
-            logger.info(request.url());
+            logger.info("Request URL " + request.url());
             Response response = this.okHttpClient.newCall(request).execute();
             logger.info("Response: " + response.toString());
+
             if (!response.isSuccessful()) {
                 return null;
             }
+            
             logger.info("Got User " + response.toString());
             return gson.fromJson(new String(response.body().bytes()), Identity.class);
         } catch (IOException exception) {
             logger.error(exception);
             exception.printStackTrace();
+        } catch (Exception e) {
+            logger.error(e);
+            e.printStackTrace();
         }
         return null;
     }
