@@ -16,7 +16,9 @@ public class ProfileHandler implements RequestHandler<ProfileRequest, LambdaProx
     UseCaseFactory factory;
 
     public ProfileHandler() {
+        super();
         ProductionDirector director = new ProductionDirector();
+        director.construct();
         factory = director.getUseCaseFactory();
     }
 
