@@ -29,7 +29,9 @@ public class UpdateProfileHandler implements RequestHandler<ProfileRequest, Lamb
         if (identity == null) {
             return new UnauthorizedAnswer();
         }
-        
+
+        logger.info("Got Request for " + input.getFirstName());
+
         return new LambdaProxyResponse(HttpStatus.SUCCESS, input);
     }
 }

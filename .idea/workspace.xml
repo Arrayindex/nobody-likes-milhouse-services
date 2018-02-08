@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33f107a-a337-4122-8339-3e7b074f5d76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateProfileHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UpdateProfileHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="440">
+              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,11 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileRequest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProfileRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="394">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="e#529#530#0" expanded="true" />
                 <element signature="e#561#562#0" expanded="true" />
@@ -504,8 +504,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/web/answers/UnauthorizedAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/GetProfileHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/web/LambdaProxyRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" />
       </list>
     </option>
   </component>
@@ -1162,14 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/domain/user/Identity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/confusedpenguins/nobodylikesmilhouse/api/domain/usecase/AuthenticateUserUseCaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1217,14 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/GetProfileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/web/LambdaProxyRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1233,20 +1217,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="394">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#561#562#0" expanded="true" />
@@ -1254,6 +1228,32 @@
             <element signature="e#621#622#0" expanded="true" />
             <element signature="e#653#654#0" expanded="true" />
             <element signature="e#681#682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/domain/user/Identity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/GetProfileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
