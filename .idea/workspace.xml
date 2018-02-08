@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33f107a-a337-4122-8339-3e7b074f5d76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/ProfileRequest.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -76,8 +75,8 @@
       <file leaf-file-name="UpdateProfileHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="440">
+              <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1253,8 +1252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/confusedpenguins/nobodylikesmilhouse/api/host/profile/UpdateProfileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="440">
+          <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
