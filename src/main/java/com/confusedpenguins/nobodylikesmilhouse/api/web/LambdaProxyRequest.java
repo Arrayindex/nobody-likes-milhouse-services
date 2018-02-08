@@ -1,8 +1,10 @@
 package com.confusedpenguins.nobodylikesmilhouse.api.web;
 
+import com.google.gson.Gson;
+
 import java.util.Map;
 
-public abstract class LambdaProxyRequest {
+public abstract class LambdaProxyRequest<E> {
     private final String facebookTokenHeader = "x-facebook-token";
     private Map<String, String> headers;
     private String body;
@@ -13,6 +15,10 @@ public abstract class LambdaProxyRequest {
 
     public void setHeaders(Map<String, String> headers) {
         this.headers = headers;
+    }
+
+    public E getSerializedBody(Class<E> clazz) {
+        return new Gson().fromJson(this.body, clazz);
     }
 
     public String getBody() {
