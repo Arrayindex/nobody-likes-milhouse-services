@@ -40,7 +40,7 @@ public class AuthenticateUserUseCase implements UseCase<Identity> {
             if (!response.isSuccessful()) {
                 return null;
             }
-            
+
             logger.info("Got User " + response.toString());
             return gson.fromJson(new String(response.body().bytes()), Identity.class);
         } catch (IOException exception) {

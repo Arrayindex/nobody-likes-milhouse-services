@@ -15,6 +15,7 @@ Resources:
       CodeUri: ./build/libs/milhouse-api.jar
       Handler: com.confusedpenguins.nobodylikesmilhouse.api.host.profile.ProfileHandler::handleRequest
       Runtime: java8
+      Timeout: 15
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
