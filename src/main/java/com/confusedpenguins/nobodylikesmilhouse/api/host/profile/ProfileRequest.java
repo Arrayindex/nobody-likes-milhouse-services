@@ -11,12 +11,6 @@ public class ProfileRequest extends LambdaProxyRequest {
 
     }
 
-    public ProfileRequest(String firstName, String email, String quote) {
-        this.firstName = firstName;
-        this.email = email;
-        this.quote = quote;
-    }
-
     public String getFirstName() {
         return firstName;
     }

@@ -26,9 +26,9 @@ public class UpdateProfileHandler implements RequestHandler<ProfileRequest, Lamb
     public LambdaProxyResponse handleRequest(ProfileRequest input, Context context) {
         Identity identity = this.factory.newAuthenticateUserUseCase(input.getFacebookToken()).execute();
 
-        if (identity == null) {
-            return new UnauthorizedAnswer();
-        }
+//        if (identity == null) {
+//            return new UnauthorizedAnswer();
+//        }
 
         logger.info("Got Request for " + input.getFirstName());
 
